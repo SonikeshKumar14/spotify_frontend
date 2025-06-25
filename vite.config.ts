@@ -14,4 +14,9 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  preview: {
+    port: parseInt(process.env.PORT || '4173'),
+    host: true,
+    allowedHosts: ['spotify-frontend-vfxk.onrender.com'],
+  },
 })
